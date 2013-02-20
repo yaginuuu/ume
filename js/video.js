@@ -122,11 +122,34 @@ function update(position){
  
 	// 描画
 	var gmap = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
-	//マーカーの設定
-	var marker = new google.maps.Marker({ 
-	  position: myLatlng, 
-	  map: gmap
-	}); 
+
+	function attachMessage(marker, msg) {
+    google.maps.event.addListener(marker, 'click', function(event) {
+      new google.maps.InfoWindow({
+        content: msg
+      }).open(marker.getMap(), marker);
+    });
+  }
+
+	var data = new Array();//マーカー位置の緯度経度
+	data.push({position: new google.maps.LatLng(lat, lng), content: '君だよ！'});
+  data.push({position: new google.maps.LatLng(35.681382, 139.766084), content: '東京駅'});
+  data.push({position: new google.maps.LatLng(35.690921, 139.700258), content: '新宿駅'});
+
+  for (i = 0; i < data.length; i++) {
+    var myMarker = new google.maps.Marker({
+      position: data[i].position, 
+      map: gmap
+    });
+    attachMessage(myMarker, data[i].content);
+  }
+	// //マーカーの設定
+	// var marker = new google.maps.Marker({ 
+	//   position: myLatlng, 
+	//   map: gmap
+
+	
+	// }); 
  
  
   }
