@@ -1,0 +1,139 @@
+/*body {
+	margin : 0;
+	padding: 0;
+	background-color: white;
+}
+header {
+	margin : 0;
+	padding: 0;
+	width: 750px;
+	height: 32px;
+	background-color: #57cd7b;
+}
+nav {
+	margin : 0;
+	padding: 0;
+	width: 750px;
+	height: 20px;
+	background-color: #86dfa1;
+}
+nav ul {
+	margin:0px;
+	padding:0px;
+	background-color:#86dfa1;
+	list-style-type:none;
+}
+nav li {
+	float:left;
+	width: 111px;
+	height:20px;
+	list-style: none;
+	text-align: center;
+	background-color:#86dfa1;
+}
+nav li a {
+	display:block;
+	height:100%;
+	font-size: 9pt;
+	font-weight: bold;
+	text-decoration: none;
+}
+nav li a:hover {
+	display:block;
+	height:100%;
+	font-size: 9pt;
+	font-weight: bold;
+	text-decoration: none;
+	background-color:#c2f5d2;
+}
+/* --------------  段落落ちするのでdivで囲んでください ---------------- */
+article {
+	margin : 0;
+	padding: 0;
+	width: 200px;
+	height: 600px;
+	background-color: #304738;
+	font-size: 80%;
+	color: white;
+	float: left;
+}
+article h1 {
+	font-size: 12pt;
+}
+section#main {
+	margin : 0;
+	padding: 0;
+	width: 350px;
+	height: 600px;
+	background-color: #d3ffc5;
+	float: left;
+}
+#main h1 {
+	font-size: 14pt;
+	border-bottom:1px solid black;
+	text-shadow: 1px 1px 3px #777;
+}
+#main h2 {
+	font-size: 12pt;
+	border-bottom:1px solid black;
+	text-shadow: 1px 1px 3px #777;
+}
+#main p {
+	padding: 10px;
+	font-size: 12pt;
+	line-height: 150%;
+}
+#main p strong {
+	font-size: 12pt;
+}
+aside {
+	margin : 0;
+	padding: 0;
+	width: 200px;
+	height: 600px;
+	background-color: #ff7e00;
+	float: left;
+}
+footer {
+	clear: both;
+	margin : 0;
+	padding: 0;
+	width: 750px;
+	height: 50px;
+	background-color: #57cd7b;
+}
+footer p {
+	padding-right: 20px;
+	text-align: right;
+	font-size: 9pt;
+}
+canvas {
+	border: 1px solid red;
+}
+
+form p {
+	margin:0 0 -15px 0;
+	padding:0;
+}*/
+
+.ui-content {
+border-width: 0;
+overflow: visible;
+overflow-x: hidden;
+padding: 0px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

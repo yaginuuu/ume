@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <title>maigo app</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+    <!-- <link rel="stylesheet" href="" /> -->
+    <script src="http://code.jquery.com/jquery-1.6.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+    <script src="js/video.js"></script>
+    <script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+
+</head>
+<body>
+<!-- homeページ（地図とチャット） -->
+<div data-role="page" id="home">
+    <div data-role="header">
+        <h1>maigo app</h1>
+    </div>
+    <div data-role="content">
+        <div id="pos">...loading</div>
+        <div id="map_canvas" style="width:95%; height:400px ; border:solid 5px #ddd;"></div>
+        <!-- <div id="result" style="width:600px; height:200px"></div> -->
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#movie">地図</a></li>
+                <li><a href="#menu">チャット</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- 地図最大化表示ページ  -->
+<div data-role="page" id="movie">
+    <div data-role="header">
+        <h1>maigo app</h1>
+    </div>
+    <div data-role="content">
+        <div id="pos">...loading</div>
+        <div id="map_canvas" style="width:95%; height:500px ; border:solid 5px #ddd;"></div>
+        <!-- <div id="result" style="width:600px; height:400px"></div> -->
+    </div> 
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#movie">地図</a></li>
+                <li><a href="#menu">チャット</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- チャット最大化表示ページ     -->
+<div data-role="page" id="menu">
+    <div data-role="header">
+        <h1>maigo app</h1>
+    </div>
+    <div data-role="content">
+        <ul data-role="listview" data-filter="true">
+            <li data-role="list-divider">自然</li>
+            <li><a href="#home">
+                <img src="images/waterfall1.jpg" data-video-url="movie/sample1" alt="滝1">
+                <h3>滝１</h3>
+                <p>岩手県の滝です。</p>
+            </a></li>
+            <li><a href="#home">
+                <img src="images/waterfall2.jpg" data-video-url="movie/sample2" alt="滝2">
+                <h3>滝２</h3>
+                <p>北海道の滝です。</p>
+            </a></li>
+        </ul>
+    </div>
+    <div data-role="footer" data-position="fixed">
+        <div data-role="navbar">
+            <ul>
+                <li><a href="#home">ホーム</a></li>
+                <li><a href="#movie">地図</a></li>
+                <li><a href="#menu">チャット</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
